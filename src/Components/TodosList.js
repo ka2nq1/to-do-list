@@ -6,13 +6,12 @@ const TodosList = ({ todos }) => {
   return (
     <div>
       {
-        todos.map((todo, i) => <Todo todo={todo} />)
-      }
+        todos.map((todo, i) => (
+          <Todo key={i} todo={todo} idx= {i} />
+        ))}
     </div>
   )
 }
 
-const mapStateToProps = state => ({
-  todos: state.todos
-})
+const mapStateToProps = ({ todos }) => ({ todos })
 export default connect(mapStateToProps)(TodosList)
