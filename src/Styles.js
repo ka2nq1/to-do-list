@@ -93,8 +93,9 @@ const Styles = styled.div`
 .deleteBtn {
   cursor: pointer;
   display: flex;
+  padding-top: 5px;
   color: #bdcada;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 15px;
   min-height: 100%;
   right: 0;
