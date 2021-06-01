@@ -4,10 +4,10 @@ import Todo from './Todo'
 
 const TodosList = ({ todos }) => {
   return (
-    <div>
+    <div className='todoList'>
       {
         todos.map((todo, i) => (
-          <Todo key={i} todo={todo} idx= {i} />
+          <Todo key = { i } todo = { todo } idx = { i } />
         ))}
     </div>
   )

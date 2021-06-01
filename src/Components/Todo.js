@@ -4,14 +4,15 @@ import { deleteTodo, editTodo } from '../redux/action/addTodo.action'
 
 const Todo = ({ todo, idx, deleteTodo, editTodo, selected, text }) => {
   return (
-    <div>
-      <div>
-        <span onClick={() => editTodo(idx)}>
+    <div className='listItem'>
+      <span className='itemText' >
         {
           selected === idx ? text : todo
         }
-        </span>
-        <span onClick={() => deleteTodo(idx)} style={{ marginLeft: '50px', cursor: 'pointer'}}>x</span>
+      </span>
+      <div className='deleteBtn'>
+        <i class="fa fa-pencil" aria-hidden="true" onClick={() => editTodo(idx)}></i>
+        <i class="fa fa-trash" aria-hidden="true" onClick={() => deleteTodo(idx)}></i>
       </div>
     </div>
   )

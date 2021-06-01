@@ -15,16 +15,21 @@ const InputField = ({addText, text, selected, addTodo, editAddTodo}) => {
         selected: selected
       })
     else
+    if (text) {
       addTodo(text)
+    }
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='appForm'>
       <input
+        className='appInput'
         type='text'
         name='todo'
         value={text}
+        autoComplete='off'
         placeholder='Добавить заметку...'
         onChange={handleChange} />
+      <i onClick={handleSubmit} class="fa fa-plus" aria-hidden="true"></i>
     </form>
   )
 }
