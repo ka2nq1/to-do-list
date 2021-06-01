@@ -9,11 +9,12 @@ const InputField = ({addText, text, selected, addTodo, editAddTodo}) => {
   
   const handleSubmit = e => {
     e.preventDefault()
-    if (selected || selected === 0)
-      editAddTodo({
-        value: text,
-        selected: selected
-      })
+    if (selected || selected === 0) {
+    editAddTodo({
+      value: text,
+      selected: selected
+    })
+  }
     else
     if (text) {
       addTodo(text)
