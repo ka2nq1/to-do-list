@@ -1,0 +1,16 @@
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  margin: 0;
+  background-color: #ebf5fc;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
