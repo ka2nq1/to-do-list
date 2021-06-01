@@ -10,6 +10,7 @@ const Styles = styled.div`
 }
 
 .title {
+  padding-left: 20px;
   text-align: center;
   font-weight: 100;
   font-size: 70px;
