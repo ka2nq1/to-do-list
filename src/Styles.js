@@ -95,11 +95,12 @@ const Styles = styled.div`
 }
 
 .todoList {
-  width: 270px;
+  width: 280px;
   max-height: 300px;
   overflow-y: auto;
   margin-top: 10px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .listItem {
