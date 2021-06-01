@@ -5,6 +5,7 @@ const Styles = styled.div`
 .App {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -37,13 +38,32 @@ const Styles = styled.div`
   color: #bdcada;
 }
 
+.searchInput {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  width: 150px;
+  height: 25px;
+  color: #32a3b1;
+  background: #ebf5fc;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  border-radius: 40px;
+  padding: 5px 30px 5px 20px;
+  box-shadow: inset -2px -2px 6px #fff, inset 2px 2px 6px rgb(0 0 0 / 10%);
+}
+.searchInput::placeholder {
+  font-size: 16px;
+  color: #bdcada;
+}
+
 .appForm {
   position: relative;
 }
 
 .fa-plus {
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 68px;
   cursor: pointer;
   color: #32a3b1;
@@ -74,11 +94,11 @@ const Styles = styled.div`
 }
 
 .todoList {
-  padding-right: 10px;
   width: 270px;
   max-height: 300px;
   overflow-y: auto;
-  margin: 10px auto 0;
+  margin-top: 10px;
+  padding-left: 10px;
 }
 
 .listItem {

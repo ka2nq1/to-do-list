@@ -30,3 +30,8 @@ export const editAddTodo = obj => ({
 export const deleteAll = () => ({
   type: 'DELETE_ALL'
 })
+
+export const searchFilter = text => ({
+  type: 'SEARCH_FILTER',
+  payload: text
+});

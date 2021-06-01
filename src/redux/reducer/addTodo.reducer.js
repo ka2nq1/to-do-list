@@ -1,7 +1,8 @@
 const initState = {
   todos: [],
   text: '',
-  selected: undefined
+  selected: undefined,
+  filteredTodos: []
 }
 
 const setPersist = (todos) => window.localStorage.setItem('todos2', JSON.stringify(todos))
@@ -26,6 +27,11 @@ export const addTodo = (state = initState, action) => {
       return {
         ...state,
         text: action.payload
+      }
+    case 'SEARCH_FILTER':
+      return {
+        ...state,
+        filteredTodos: action.payload.toLowerCase()
       }
     case 'DELETE_TODO':
       const todo3 = state.todos.filter((todo, i) => i !== action.payload)
